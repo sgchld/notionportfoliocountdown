@@ -35,9 +35,6 @@ body{
   background: #FAF4C0;
  }
 
-.minutes {
-  background: #FAF4C0;
-}
 
 .numbers {
   font-family: 'Montserrat', sans-serif;
@@ -87,8 +84,7 @@ body{
         <div id="days" class="numbers "> </div>days</div> 
       <div class="hours"> 
         <div  id="hours" class="numbers"> </div>hours</div> 
-      <div class="minutes"> 
-        <div  id="minutes" class="numbers"> </div>minutes</div> 
+    
       
       </div>
 
@@ -112,12 +108,12 @@ let timer = setInterval(function() {
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+ 
  
   // display
   document.getElementById("days").innerHTML=days
   document.getElementById("hours").innerHTML=hours
-  document.getElementById("minutes").innerHTML=minutes
+  
   
 
 
